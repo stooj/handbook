@@ -7,6 +7,7 @@ BOOK_DIR=${BUILD_DIR}/.
 all: latex-pdf combined
 
 tex:
+	-mkdir ${BUILD_DIR}
 	./convert_to_tex.sh ${TEX_DIR}
 	cp main.tex ${TEX_DIR}
 
